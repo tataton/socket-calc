@@ -1,0 +1,14 @@
+{
+  "name": "socket-calc",
+  "version": "0.0.1",
+  "description": "Code challenge entry for Sezzle",
+  "main": "server.js",
+  "author": "T. Andrew Taton",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "express-socket.io-session": "^1.3.5",
+    "socket.io": "^2.1.1"
+  }
+}
