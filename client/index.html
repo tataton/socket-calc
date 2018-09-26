@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta name="description" content="SocketCalc">
+  <meta name="author" content="T. Andrew Taton">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>SocketCalc</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="heading-primary">
+      SocketCalc
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="btn-empty">
+        </div>
+        <button type="button" class="btn" id="clear-all" name="clear-all">CE</button>
+        <button type="button" class="btn" id="clear-display" name="clear-display">C</button>
+        <button type="button" class="btn operator" name="divide">&divide;</button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn digit" name="7">7</button>
+        <button type="button" class="btn digit" name="8">8</button>
+        <button type="button" class="btn digit" name="9">9</button>
+        <button type="button" class="btn operator" name="multiply">&times;</button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn digit" name="4">4</button>
+        <button type="button" class="btn digit" name="5">5</button>
+        <button type="button" class="btn digit" name="6">6</button>
+        <button type="button" class="btn operator" name="subtract">-</button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn digit" name="1">1</button>
+        <button type="button" class="btn digit" name="2">2</button>
+        <button type="button" class="btn digit" name="3">3</button>
+        <button type="button" class="btn operator" name="add">+</button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn" id="plus-minus" name="plus-minus">&plusmn;</button>
+        <button type="button" class="btn" id="zero" name="0">0</button>
+        <button type="button" class="btn" id="decimal-point" name="decimal-point">.</button>
+        <button type="button" class="btn" id="enter" name="enter">=</button>
+      </div>
+    </div>
+  </header>
+  <script src="socket.io.js"></script>
+  <script src="client.js" charset="utf-8"></script>
+</body>
+
+</html>

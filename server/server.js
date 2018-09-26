@@ -1,4 +1,5 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const session = require('express-session')({
@@ -31,7 +32,17 @@ io.on('connection', socket => {
 });
 
 // Serve static files
-server.use(express.static('build'));
+app.use('/', express.static('client'));
+
+app.get('/', (_, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'index.html'));
+});
+
+// Catch-all handler for any initial request that doesn't
+// match one above; send to home route.
+app.get('*', (_, res) => {
+  res.redirect('/');
+});
 
 server.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
