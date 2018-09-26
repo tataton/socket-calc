@@ -18,6 +18,10 @@
       SocketCalc
     </h1>
     <div class="container">
+      <div class="display">
+        <p class="current-value" id="current-value"></p>
+        <p class="current-calc" id="current-calc"></p>
+      </div>
       <div class="row">
         <div class="btn-empty">
         </div>
@@ -45,13 +49,15 @@
       </div>
       <div class="row">
         <button type="button" class="btn" id="plus-minus" name="plus-minus">&plusmn;</button>
-        <button type="button" class="btn" id="zero" name="0">0</button>
+        <button type="button" class="btn digit" name="0">0</button>
         <button type="button" class="btn" id="decimal-point" name="decimal-point">.</button>
-        <button type="button" class="btn" id="enter" name="enter">=</button>
+        <button type="button" class="btn" id="equals" name="equals">=</button>
       </div>
+      <div class="calc-report" id="calc-report"></div>
     </div>
   </header>
-  <script src="socket.io.js"></script>
+  <script src="vendor/socket.io.js"></script>
+  <script src="vendor/big.js"></script>
   <script src="client.js" charset="utf-8"></script>
 </body>
 

@@ -16,6 +16,7 @@
     "server": "nodemon --watch server server/server.js"
   },
   "devDependencies": {
+    "big.js": "^5.1.2",
     "nodemon": "^1.18.4"
   }
 }
