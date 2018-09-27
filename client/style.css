@@ -25,6 +25,10 @@ div.container {
   border-radius: 10px;
 }
 
+div.row {
+  margin: 0 auto;
+}
+
 div.name-entry {
   text-align: center;
   padding: 10px 0;
