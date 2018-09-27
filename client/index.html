@@ -17,45 +17,55 @@
     <h1 class="heading-primary">
       SocketCalc
     </h1>
-    <div class="container">
-      <div class="display">
-        <p class="current-value" id="current-value"></p>
-        <p class="current-calc" id="current-calc"></p>
-      </div>
-      <div class="row">
-        <div class="btn-empty">
-        </div>
-        <button type="button" class="btn" id="clear-all" name="clear-all">CE</button>
-        <button type="button" class="btn" id="clear-display" name="clear-display">C</button>
-        <button type="button" class="btn operator" name="divide">&divide;</button>
-      </div>
-      <div class="row">
-        <button type="button" class="btn digit" name="7">7</button>
-        <button type="button" class="btn digit" name="8">8</button>
-        <button type="button" class="btn digit" name="9">9</button>
-        <button type="button" class="btn operator" name="multiply">&times;</button>
-      </div>
-      <div class="row">
-        <button type="button" class="btn digit" name="4">4</button>
-        <button type="button" class="btn digit" name="5">5</button>
-        <button type="button" class="btn digit" name="6">6</button>
-        <button type="button" class="btn operator" name="subtract">-</button>
-      </div>
-      <div class="row">
-        <button type="button" class="btn digit" name="1">1</button>
-        <button type="button" class="btn digit" name="2">2</button>
-        <button type="button" class="btn digit" name="3">3</button>
-        <button type="button" class="btn operator" name="add">+</button>
-      </div>
-      <div class="row">
-        <button type="button" class="btn" id="plus-minus" name="plus-minus">&plusmn;</button>
-        <button type="button" class="btn digit" name="0">0</button>
-        <button type="button" class="btn" id="decimal-point" name="decimal-point">.</button>
-        <button type="button" class="btn" id="equals" name="equals">=</button>
-      </div>
-      <div class="calc-report" id="calc-report"></div>
-    </div>
   </header>
+  <div class="container">
+    <div class="name-entry">
+      <label for="name-entry">Your name:</label>
+      <input type="text" id="name-entry" name="name-entry" />
+    </div>
+    <div id="output">
+      <div id="current-value"></div>
+      <div id="current-calc">
+        <div id="calc-label">Input: </div>
+        <div id="calc-content"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="btn-empty">
+      </div>
+      <button type="button" class="btn" id="clear-all" name="clear-all">CE</button>
+      <button type="button" class="btn" id="clear-display" name="clear-display">C</button>
+      <button type="button" class="btn operator" name="div">&divide;</button>
+    </div>
+    <div class="row">
+      <button type="button" class="btn digit" name="7">7</button>
+      <button type="button" class="btn digit" name="8">8</button>
+      <button type="button" class="btn digit" name="9">9</button>
+      <button type="button" class="btn operator" name="times">&times;</button>
+    </div>
+    <div class="row">
+      <button type="button" class="btn digit" name="4">4</button>
+      <button type="button" class="btn digit" name="5">5</button>
+      <button type="button" class="btn digit" name="6">6</button>
+      <button type="button" class="btn operator" name="minus">-</button>
+    </div>
+    <div class="row">
+      <button type="button" class="btn digit" name="1">1</button>
+      <button type="button" class="btn digit" name="2">2</button>
+      <button type="button" class="btn digit" name="3">3</button>
+      <button type="button" class="btn operator" name="plus">+</button>
+    </div>
+    <div class="row">
+      <button type="button" class="btn" id="plus-minus" name="plus-minus">&plusmn;</button>
+      <button type="button" class="btn digit" name="0">0</button>
+      <button type="button" class="btn" id="decimal-point" name="decimal-point">.</button>
+      <button type="button" class="btn" id="equals" name="equals">=</button>
+    </div>
+    <div class="calc-footer">
+      <ol class="calc-report" id="calc-report"></ol>
+    </div>
+  </div>
+
   <script src="vendor/socket.io.js"></script>
   <script src="vendor/big.js"></script>
   <script src="client.js" charset="utf-8"></script>

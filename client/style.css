@@ -8,9 +8,74 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
-  padding: 30px;
+  line-height: 1.3;
+  background-color: #dddddd;
+}
+
+header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+div.container {
+  width: 320px;
+  min-height: 480px;
   background-color: #ffffff;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+div.name-entry {
+  text-align: center;
+  padding: 10px 0;
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+input {
+  display: inline-block;
+  margin-left: 10px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+div#output {
+  background-color: #000000;
+  padding: 5px 0;
+}
+
+div#current-value {
+  width: 95%;
+  margin: 10px auto;
+  padding: 0 10px;
+  height: 45px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: right;
+}
+
+div#current-calc {
+  display: flex;
+  width: 95%;
+  margin: 10px auto;
+  min-height: 20px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+ol {
+  list-style-type: disc;
+  font-size: 0.75rem;
+  list-style-position: inside;
 }
 
 .header {
@@ -24,15 +89,17 @@ body {
   color: #000000;
 }
 
-.container {
-  width: 320px;
+.btn,
+.btn-empty {
+  width: 77px;
+  display: inline-block;
 }
 
 .btn {
   box-shadow: inset 0px -1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-  display: inline-block;
-  border-radius: 10rem;
+  background: linear-gradient(to bottom, #ffffff 5%, #eeeeee 100%);
+  border-radius: 3rem;
+  padding: 5px 0;
   transition: all 0.2s;
   font-size: 1.6rem;
   font-weight: bold;
@@ -41,10 +108,20 @@ body {
 }
 
 .btn:hover {
-  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background: linear-gradient(to bottom, #eeeeee 5%, #ffffff 100%);
 }
 
 .btn:active {
-  transform: translateY(-2px);
+  transform: translateY(2px);
   box-shadow: 0;
+}
+
+.calc-footer {
+  width: 100%;
+  margin: 10px 0;
+}
+
+li {
+  margin: 0 10px;
+  padding-left: 0;
 }
