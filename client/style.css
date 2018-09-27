@@ -27,6 +27,7 @@ div.container {
 
 div.row {
   margin: 0 auto;
+  text-align: center;
 }
 
 div.name-entry {
