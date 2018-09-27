@@ -1,4 +1,5 @@
 const socket = io();
+// Decimal resolution of big.js output:
 Big.DP = 10;
 
 let calculation = [];
@@ -7,7 +8,7 @@ const initialValue = '';
 let prevResult = initialValue;
 let currentValue = initialValue;
 
-// Output elements
+// Input/Output elements
 const nameEntryEl = document.getElementById('name-entry');
 const currentValueEl = document.getElementById('current-value');
 const currentCalcEl = document.getElementById('calc-content');
